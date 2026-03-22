@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -5,15 +6,26 @@ public class PlayerMovement : MonoBehaviour
     public float FlySpeed = 5;
     public float YawAmount = 120;
 
+    public GameObject pauseMenu;
+    public bool isPaused = true;
     private float Yaw;
-    public Rigidbody rb;
     private Vector2 input;
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
     }
     void Update()
     {
+        if(isPaused && Input.anyKeyDown)
+        {
+            pauseMenu.SetActive(false);
+            isPaused = false;
+        }
+        if (!isPaused && Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenu.SetActive(true);
+            isPaused = true;
+        }
+        if(isPaused) return;
         transform.position += transform.forward * FlySpeed * Time.deltaTime;
         input.x = Input.GetAxis("Horizontal");
         input.y = Input.GetAxis("Vertical");
