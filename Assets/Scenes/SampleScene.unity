@@ -1202,28 +1202,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &1230592814
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230592809}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1253432148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2962536832701412109, guid: c665ba92648a10e43aa220aee66deec5, type: 3}
@@ -1578,15 +1556,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7666572165679070218, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 67.302
+      value: 71.5
       objectReference: {fileID: 0}
     - target: {fileID: 7666572165679070218, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 533.143
+      value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 7666572165679070218, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.92
+      value: -42.75
       objectReference: {fileID: 0}
     - target: {fileID: 7666572165679070218, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1632,17 +1610,13 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8307473002016944295, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7049018886099920003, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1230592813}
-    - targetCorrespondingSourceObject: {fileID: 7049018886099920003, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1230592814}
   m_SourcePrefab: {fileID: 100100000, guid: d2b21352f43d2b3458a87b4c5fbef46b, type: 3}
 --- !u!1001 &7890268763862913653
 PrefabInstance:

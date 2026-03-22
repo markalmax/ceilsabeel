@@ -19,11 +19,15 @@ public class PlayerMovement : MonoBehaviour
         {
             pauseMenu.SetActive(false);
             isPaused = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         if (!isPaused && Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenu.SetActive(true);
             isPaused = true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         if(isPaused) return;
         transform.position += transform.forward * FlySpeed * Time.deltaTime;
